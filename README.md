@@ -1,4 +1,4 @@
-# Cristalix Visual-Driver DOCS (актуальная версия 3.9.10)
+# Cristalix Visual-Driver DOCS (актуальная версия 3.2.4.RELEASE)
 
 ![image](https://user-images.githubusercontent.com/42806772/149049028-a99c790a-224a-48c5-b3a2-58989900fd3e.png)
 <br>
