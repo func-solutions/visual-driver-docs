@@ -1,4 +1,4 @@
-# Cristalix Visual-Driver DOCS (актуальная версия 3.2.4.RELEASE)
+# Cristalix Visual-Driver DOCS (актуальная версия 3.2.7.RELEASE)
 
 ![image](https://user-images.githubusercontent.com/42806772/149049028-a99c790a-224a-48c5-b3a2-58989900fd3e.png)
 <br>
@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'me.func:visual-driver:3.2.4.RELEASE'
+    implementation 'me.func:visual-driver:3.2.7.RELEASE'
     // ссылка на nexus https://repo.c7x.ru/#browse/browse:maven-releases:me%2Ffunc%2Fvisual-driver
 }
 ```
