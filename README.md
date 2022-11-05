@@ -1,4 +1,4 @@
-# Cristalix Visual-Driver DOCS (актуальная версия 3.2.7.RELEASE)
+# Cristalix Visual-Driver DOCS (актуальная версия 3.2.9.RELEASE)
 
 ![image](https://user-images.githubusercontent.com/42806772/149049028-a99c790a-224a-48c5-b3a2-58989900fd3e.png)
 <br>
@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'me.func:visual-driver:3.2.7.RELEASE'
+    implementation 'me.func:visual-driver:3.2.9.RELEASE'
     // ссылка на nexus https://repo.c7x.ru/#browse/browse:maven-releases:me%2Ffunc%2Fvisual-driver
 }
 ```
@@ -157,7 +157,7 @@ players.forEach { player -> data.send("lootbox", player) }
 
 <h3>TokenGroup EXPERIMENTAL</h3>
 
-<img src="![image](https://user-images.githubusercontent.com/42806772/200116468-263d8ecd-0ca7-405b-a969-2ff29b9127e4.png)" width="500">
+<img src="https://user-images.githubusercontent.com/42806772/200116468-263d8ecd-0ca7-405b-a969-2ff29b9127e4.png" width="500">
 
 Новый скорборд для тайконов и симуляторов! ВАЖНО! Группу нужно создать только один раз, не нужно ее делать на каждого игрока
 
