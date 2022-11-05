@@ -155,6 +155,34 @@ players.forEach { player -> data.send("lootbox", player) }
 Чтобы включить режим быстрого тестирования, допишите в `Anime#include` кит `Kit.DEBUG`. По умолчанию папка `mods`
 является хранилищем тестовых модов, чтобы сменить стандартную папку - измените переменную среды `MOD_TEST_PATH`.
 
+<h3>TokenGroup EXPERIMENTAL</h3>
+
+<img src="![image](https://user-images.githubusercontent.com/42806772/200116468-263d8ecd-0ca7-405b-a969-2ff29b9127e4.png)" width="500">
+
+Новый скорборд для тайконов и симуляторов! ВАЖНО! Группу нужно создать только один раз, не нужно ее делать на каждого игрока
+
+Пример создания на Kotlin
+```kotlin
+// Где-то на уровне класса
+private val token = TokenGroup(
+        Token.builder()
+            .title("Деньги")
+            .content { player -> Emoji.DOLLAR + " §a" + convert(user(player).vault[user(player).locationType!!.moneyType]!!) }
+            .build(),
+        Token.builder()
+            .title("Кристалики")
+            .content { player -> Emoji.DONATE + " §b" + convert(app.getUser(player)!!.donateCoins.toDouble()) }
+            .build(),
+        Token.builder()
+            .title("Склад")
+            .content { player -> Emoji.MINING + " §6" + convert(getStorage(player)) }
+            .build(),
+    )
+    
+// При входе игрока, через пару тиков
+token.subscribe(player)
+```
+
 <h3>ScoreBoard STANDARD</h3>
 
 <img src="https://user-images.githubusercontent.com/42806772/192067005-439c2c7e-805c-4fb3-86ec-ccb7f8f64eb5.png" width="500">
