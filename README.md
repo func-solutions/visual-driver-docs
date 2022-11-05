@@ -164,7 +164,7 @@ players.forEach { player -> data.send("lootbox", player) }
 Пример создания на Kotlin
 ```kotlin
 // Где-то на уровне класса
-private val token = TokenGroup(
+private val group = TokenGroup(
         Token.builder()
             .title("Деньги")
             .content { player -> Emoji.DOLLAR + " §a" + convert(user(player).vault[user(player).locationType!!.moneyType]!!) }
@@ -180,7 +180,10 @@ private val token = TokenGroup(
     )
     
 // При входе игрока, через пару тиков
-token.subscribe(player)
+group.subscribe(player)
+   
+// Удалить токены из группы
+group.removeTokens(group.tokens[0].uuid)   
 ```
 
 <h3>ScoreBoard STANDARD</h3>
